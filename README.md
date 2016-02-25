@@ -1,5 +1,5 @@
 # Caesar Cipher Tool
-Usually we see caesar cipher in crypto problems/races or in hackaflags. This tool was developed to help in these situations, make the crack proccess easier and faster.
+Usually we see caesar cipher in crypto problems/races or in hackaflags. This tool was developed to help in these situations, making the crack proccess easier and faster.
 
 ## Usage
 Caesar Cipher accepts some options, you can always see more information with:
