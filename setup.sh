@@ -12,4 +12,4 @@ if [ $? -ne 0 ]; then
     echo "::Error: Aborting..."
     exit 1
 fi
-echo "--> Successful installed"
+echo "--> Successfully installed"
