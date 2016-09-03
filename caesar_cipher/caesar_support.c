@@ -79,7 +79,8 @@ void parse_arguments(int argc, char *argv[], bool *decrypt, int *key, char **tex
     }
 }
 
-void display_help_message(char *program_name) {
+void display_help_message(char *program_name) 
+{
     printf("Usage:\n");
     printf("\nWith direct text: %s [text] [-k or --key KEY]\n\n\tor\n\nWith file as input: %s [-f or --file] [filename] [-k or --key KEY]\n", program_name, program_name);
     printf("\n[text]: string with the text to work on\n[-f or --file] [filename]: the file path to read the text\n");
