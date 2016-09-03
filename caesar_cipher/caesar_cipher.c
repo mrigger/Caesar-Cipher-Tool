@@ -4,11 +4,12 @@
 
 #include "caesar_cipher.h"
 
-char *apply_shift_to_text(char *text, int text_length, int shift_value){
+char *apply_shift_to_text(char *text, int text_length, int shift_value)
+{
     char *final_text = malloc(sizeof(char) * text_length);
 
-    for(int i = 0; i < text_length; i++){
-        if(isspace(text[i])){
+    for (int i = 0; i < text_length; i++) {
+        if (isspace(text[i])) {
             final_text[i] = ' ';
             continue; 
         }
