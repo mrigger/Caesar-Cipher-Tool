@@ -6,7 +6,7 @@
 
 char *apply_shift_to_text(char *text, int text_length, int shift_value)
 {
-    char *final_text = malloc(sizeof(char) * text_length);
+    char *final_text = malloc(sizeof(char) * (text_length + 1));
 
     for (int i = 0; i < text_length; i++) {
         if (isspace(text[i])) {
@@ -15,6 +15,6 @@ char *apply_shift_to_text(char *text, int text_length, int shift_value)
         }
         final_text[i] = ALPHABET[((text[i] - 'a') + shift_value) % ALPHABET_SIZE];
     }
-
+    final_text[text_length] = 0;
     return final_text;
 }
